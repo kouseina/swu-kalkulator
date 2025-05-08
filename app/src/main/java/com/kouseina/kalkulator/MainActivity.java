@@ -63,11 +63,31 @@ public class MainActivity extends AppCompatActivity {
 
                     hasil.setText(Double.toString(result));
 
+                    /// 5 digit = 03784
                     switch ((int) result) {
                         /// open camera
                         case 0:
-                            Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                            startActivity(intent);
+                            openActivity(CameraActivity.class);
+                            break;
+
+                        /// open audio
+                        case 3:
+                            openActivity(AudioActivity.class);
+                            break;
+
+                        /// open image
+                        case 7:
+
+                            break;
+
+                        /// open gps
+                        case 8:
+
+                            break;
+
+                        /// open gyroscope
+                        case 4:
+
                             break;
 
                         default:
@@ -89,5 +109,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    private void openActivity(Class<?> activityClass) {
+        Intent intent = new Intent(MainActivity.this, activityClass);
+        startActivity(intent);
     }
 }
