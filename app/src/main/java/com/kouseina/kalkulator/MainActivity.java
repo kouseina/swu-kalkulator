@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
                         /// open gps
                         case 8:
-
+                            openActivity(GpsActivity.class);
                             break;
 
                         /// open gyroscope
