@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewGyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope Data will be shown here"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonStartGyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Gyroscope"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonStopGyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Gyroscope"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

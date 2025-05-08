@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
                         /// open gyroscope
                         case 4:
-
+                            openActivity(GyroscopeActivity.class);
                             break;
 
                         default:
