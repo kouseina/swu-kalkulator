@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
                         /// open image
                         case 7:
-
+                            openActivity(ImageActivity.class);
                             break;
 
                         /// open gps
